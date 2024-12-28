@@ -8,7 +8,10 @@
   </head>
   <body>
     <div class="outer-div flex justify-center items-center h-screen">
-      <div id="main-div" class="w-[400px] h-64 bg-lime-200 flex justify-center">
+      <div
+        id="main-div"
+        class="w-[400px] h-auto bg-lime-200 flex justify-center flex-col gap-4"
+      >
         <div
           id="input-div"
           class="w-[400px] bg-red-200 h-16 flex justify-center items-center gap-4"
@@ -22,6 +25,18 @@
               Add task
             </button>
           </div>
+        </div>
+        <div
+          id="task-info"
+          class="h-16 w-[400px] bg-yellow-200 flex justify-between p-4 items-center"
+        >
+          <p id="task-text" class="text-center"></p>
+          <button
+            id="delete-button"
+            class="p-2 justify-center items-center bg-red-500 text-white font-bold"
+          >
+            Delete
+          </button>
         </div>
       </div>
     </div>
